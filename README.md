@@ -8,7 +8,7 @@ Reference Guide: [OpenTelemetry Data Collector](https://docs.newrelic.com/docs/o
 
 ### How to set up?
 
-1. NEW_RELIC_API_KEY=<your-key> docker-compose -f nr-config/docker-compose.yaml up
+1. NEW_RELIC_API_KEY=your-key docker-compose -f nr-config/docker-compose.yaml up
 2. make sure to export OTEL_EXPORTER_OTLP_ENDPOINT=localhost:4317 and set ENV accordingly
 3. start the go application
 4. make requests to test logging and errors: curl "http://localhost:8080/order"
